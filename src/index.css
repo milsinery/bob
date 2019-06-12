@@ -1,20 +1,82 @@
+  /* Global properties */
+
 :root {
-  --color-snow: hsl(0, 0, 100);
+  /* colors */
+  --color-snow: hsl(0, 0%, 100%);
+  --color-graphite: hsl(0, 0%, 50%);
+  --color-sky: hsl(214, 76%, 72%);
+  --color-cloud: hsl(0, 0%, 70%);
+  --color-water: hsl(227, 84%, 80%);
+
+  /* Space */
+  --space-min: 4px;
+  --space-normal: 8px;
+  --space-med: 16px;
+  --space-big: 24px;
+
+  /* Text */
+  --text-min: 12px;
+  --text-normal: 14px;
+  --text-med: 18px;
+  --text-big: 24px;
+  --text-hero: 32px;
 }
 
+
+/* Text styles */
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.h1 {
+  font-size: var(--text-big);
+  font-weight: 400;
+}
+
+.h2 {
+  font-size: var(--text-med);
+  font-weight: 500;
+}
+
+.h3 {
+  font-size: var(--text-normal);
+  font-weight: 500;
+}
+
+.base {
+  font-size: var(--space-normal);
+  line-height: 20px;
+}
+
+.optional {
+  font-size: var(--text-min);
+  line-height: 14px;
+}
+
+
+/* Base styles */
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  color: var(--color-graphite);
 }
 
 html {
-  width: 100%;
+  margin: 0;
+  padding: 0;
   height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background-color: rgba(0,0,0, .3);
   margin: 0;
+  height: 100%;
+  width: 100%;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
