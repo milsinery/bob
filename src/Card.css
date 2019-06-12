@@ -1,0 +1,16 @@
+.Card {
+    background: #fff;
+    border-radius: 4px;
+    min-height: 48px;
+    min-width: 320px;
+    margin-bottom: 8px;
+}
+
+.Card:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    color: aqua;
+    font-weight: 500;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import './index.css';
+import './Card';
 
 class App extends React.Component {
 
@@ -13,8 +14,7 @@ class App extends React.Component {
         <div className="Content">
 
           <div className="Main">
-            Main
-            {this.props.left}
+            <div className="Card"></div>
           </div>
 
           <div className="Sidebar">
