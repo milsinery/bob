@@ -2,18 +2,35 @@ import React from 'react';
 import './App.css';
 import './index.css';
 
-class Card extends React.Component {
+class App extends React.Component {
 
   render() {
-    return(
-      <div className="Card">
-        <h2 className="Tilte">{this.props.title}</h2>
-        <p className="Description">{this.props.description}</p>
-      </div> 
+    return(<div className="Wrapper">
+        <div class="Header">
+          Header
+        </div>
+
+        <div className="Content">
+
+          <div className="Main">
+            Main
+            {this.props.left}
+          </div>
+
+          <div className="Sidebar">
+            Sidebar
+            {this.props.rigth}
+          </div>
+
+        </div>
+
+        <div class="Footer">
+          Footer
+        </div>
+
+      </div>
     );
   }
 }
 
-Card.defaultProps = {title: "Title", description: "Hello, React!"};
-
-export default Card;
+export default App;
