@@ -1,14 +1,17 @@
 import React from 'react';
+import Icon from './icon';
 import './card.css';
 
 class Card extends React.Component {
 
     render() {
         return(
-            <div className="Pad">
-                <div className="Icon"></div>
-                <h2 className="Title">{this.props.title}</h2>
-                <p className="Description">{this.props.description}</p>
+            <div className="Card">
+                <Icon/>
+                <div className="Content">
+                    <h2 className="Title">{this.props.title}</h2>
+                    <p className="Description">{this.props.description}</p>
+                </div>
             </div>
         );
     }

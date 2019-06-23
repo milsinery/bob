@@ -1,14 +1,17 @@
-.Pad {
+.Card {
     position: relative;
     overflow: hidden;
     background-color: var(--color-snow);
     border-radius: 4px;
     min-height: 48px;
     min-width: 320px;
+    display: flex;
+    padding: 8px;
 }
 
-.Pad:last-child {
-    margin-bottom: 0;
+.Content {
+    display: flex;
+    flex-direction: column;
 }
 
 .Title {
