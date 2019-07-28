@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .Wrapper {
   display: flex;
   flex-direction: column;
@@ -25,22 +29,6 @@
   background: transparent;
 }
 
-.Cards {
-  overflow: auto;
-  content: "";
-  display: flex;
-  flex-direction: column;
-  align-content: stretch;
-  justify-content: stretch;
-  width: 100%;
-  max-width: 864px;
-  margin-right: var(--space-med);
-}
-
-.Cards::-webkit-scrollbar {
-  width: 0;
-}
-
 .Sidebar {
   flex-shrink: 0;
   overflow: auto;
@@ -48,7 +36,6 @@
   border-radius: 4px;
   border-radius: 4px;
   width: 320px;
-  background: transparent;
 }
 
 .Footer {

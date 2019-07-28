@@ -1,0 +1,15 @@
+.Cards {
+    overflow: auto;
+    content: "";
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: stretch;
+    width: 100%;
+    max-width: 864px;
+    margin-right: var(--space-med);
+  }
+  
+  .Cards::-webkit-scrollbar {
+    width: 0;
+  }

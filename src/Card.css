@@ -1,12 +1,15 @@
 .Card {
+    display: flex;
+    flex-shrink: 0;
     position: relative;
     overflow: hidden;
     background-color: var(--color-snow);
     border-radius: 4px;
-    min-height: 48px;
+    height: 64px;
     min-width: 320px;
-    display: flex;
     padding: 8px;
+    margin-bottom: 8px;
+    transition: all .3s ease-out;
 }
 
 .Content {
@@ -20,4 +23,19 @@
 
 .Descritpion {
     color: var(--color-cloud);
+}
+
+@media (max-width: 480px) {
+    .Card {
+        height: 48px;
+    }
+
+    .Descritpion {
+        visibility: hidden;
+    }
+
+    .Expand {
+        height: 200px;
+        transition: all .15s ease-out; 
+    }
 }
