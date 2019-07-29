@@ -6,9 +6,9 @@ class Card extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            flag: true,
             title: "Title",
-            description: "Description"
+            description: "Description",
+            flag: true
         };
 
         this.handleClick = this.handleClick.bind(this);
