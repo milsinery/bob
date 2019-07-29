@@ -1,4 +1,4 @@
-.Card {
+.card {
     display: flex;
     flex-shrink: 0;
     position: relative;
@@ -12,29 +12,35 @@
     transition: all .3s ease-out;
 }
 
-.Content {
+.content {
     display: flex;
     flex-direction: column;
 }
 
-.Title {
+.title {
     color: var(--color-sky);
 }
 
-.Descritpion {
+.descritpion {
     color: var(--color-cloud);
 }
 
+.card__expander {
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-sky);
+}
+
 @media (max-width: 480px) {
-    .Card {
+    .card {
         height: 48px;
     }
 
-    .Descritpion {
+    .descritpion {
         visibility: hidden;
     }
 
-    .Expand {
+    .card_expand {
         height: 200px;
         transition: all .15s ease-out; 
     }

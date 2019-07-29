@@ -14,19 +14,20 @@ class Card extends React.Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick(e) {
+    handleClick() {
         this.setState({flag: !this.state.flag});
     }
 
     render() {
         return(
-            <div className={this.state.flag ? "Card" : "Card Expand"} onClick={this.handleClick}>
+            <div className={this.state.flag ? "card" : "card card_expand"}>
                 <Icon/>
-                <div className="Content">
-                    <h2 className="Title">{this.props.title || this.state.title}</h2>
+                <div className="content">
+                    <h2 className="title">{this.props.title || this.state.title}</h2>
 
-                    <p className="Descritpion">{this.props.description || this.state.description}</p>
+                    <p className="descritpion">{this.props.description || this.state.description}</p>
                 </div>
+                <div className="card__expander" onClick={this.handleClick}></div>
             </div>
         );
     }
