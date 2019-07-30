@@ -29,6 +29,7 @@
     width: 32px;
     height: 32px;
     background-color: var(--color-sky);
+    visibility: hidden;
 }
 
 @media (max-width: 480px) {
@@ -36,12 +37,17 @@
         height: 48px;
     }
 
-    .descritpion {
-        visibility: hidden;
-    }
-
     .card_expand {
         height: 200px;
         transition: all .15s ease-out; 
     }
+
+    .descritpion {
+        visibility: hidden;
+    }
+
+    .card__expander {
+        visibility: visible;
+    }
+
 }
