@@ -7,11 +7,10 @@ import './Cards.css';
 class Cards extends React.Component {
 
     render(){
-        const cardContent = CardsData.map(content => <Card id={content.id} title={content.title} description={content.description}/>)
 
         return(
             <div className="Cards">
-                {cardContent}
+                {CardsData.map(content => <Card id={content.id} link={content.link} title={content.title} description={content.description}/>)}
             </div>
         );
     }

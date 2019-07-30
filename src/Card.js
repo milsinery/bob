@@ -1,11 +1,14 @@
 import React from 'react';
-import Icon from './icon';
+
 import './Card.css';
 
 class Card extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            id: " ",
+            link: "#",
+            icon: " ",
             title: "Title",
             description: "Description",
             flag: true
@@ -21,9 +24,12 @@ class Card extends React.Component {
     render() {
         return(
             <div className={this.state.flag ? "card" : "card card_expand"}>
-                <Icon/>
+
                 <div className="content">
-                    <h2 className="title">{this.props.title || this.state.title}</h2>
+                    <a href={this.props.link}>
+                        <div className="icon"></div>
+                        <h2 className="title">{this.props.title || this.state.title}</h2>
+                    </a>
 
                     <p className="descritpion">{this.props.description || this.state.description}</p>
                 </div>
