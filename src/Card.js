@@ -6,8 +6,13 @@ class Card extends React.Component {
         super(props);
         this.state = {
             id: null,
+<<<<<<< HEAD
             link: null,
             icon: " ",
+=======
+            link: "#",
+            icon: null,
+>>>>>>> f7498e18ba28853f6d9331e4ad68fa0b4ef59fdf
             title: "Title",
             description: "Description",
 
@@ -27,6 +32,7 @@ class Card extends React.Component {
 
                 <div className="content">
                     <a href={this.props.link}>
+<<<<<<< HEAD
                         <div className="icon">
 
                         </div>
@@ -34,6 +40,10 @@ class Card extends React.Component {
                         <h2 className="title">
                             {this.props.title || this.state.title}
                         </h2>
+=======
+                        <div className="icon">{this.state.icon}</div>
+                        <h2 className="title">{this.props.title || this.state.title}</h2>
+>>>>>>> f7498e18ba28853f6d9331e4ad68fa0b4ef59fdf
                     </a>
 
                     <p className="descritpion">
