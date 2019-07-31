@@ -10,7 +10,14 @@ class Cards extends React.Component {
 
         return(
             <div className="Cards">
-                {CardsData.map(content => <Card id={content.id} link={content.link} title={content.title} description={content.description}/>)}
+                {CardsData.map(content => 
+                    <Card 
+                        id={content.id} 
+                        title={content.title} 
+                        description={content.description}
+                        links={content.link.map(links => <a href={links}></a>)}
+                    />
+                )}
             </div>
         );
     }
