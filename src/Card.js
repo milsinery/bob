@@ -1,24 +1,24 @@
 import React from 'react';
-
 import './Card.css';
 
 class Card extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            id: " ",
-            link: "#",
+            id: null,
+            link: null,
             icon: " ",
             title: "Title",
             description: "Description",
+
             flag: true
         };
 
-        this.handleClick = this.handleClick.bind(this);
+        this.expandCard = this.expandCard.bind(this);
     }
 
-    handleClick() {
-        this.setState({flag: !this.state.flag});
+    expandCard() {
+        this.setState({flag: !this.state.flag})
     }
 
     render() {
@@ -27,13 +27,24 @@ class Card extends React.Component {
 
                 <div className="content">
                     <a href={this.props.link}>
-                        <div className="icon"></div>
-                        <h2 className="title">{this.props.title || this.state.title}</h2>
+                        <div className="icon">
+
+                        </div>
+                        
+                        <h2 className="title">
+                            {this.props.title || this.state.title}
+                        </h2>
                     </a>
 
-                    <p className="descritpion">{this.props.description || this.state.description}</p>
+                    <p className="descritpion">
+                        {this.props.description || this.state.description}
+                    </p>
                 </div>
-                <div className="card__expander" onClick={this.handleClick}></div>
+                
+                <div
+                    className="card__expander" 
+                    onClick={this.expandCard}>
+                </div>
             </div>
         );
     }
