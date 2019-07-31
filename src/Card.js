@@ -6,9 +6,9 @@ class Card extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            id: " ",
+            id: null,
             link: "#",
-            icon: " ",
+            icon: null,
             title: "Title",
             description: "Description",
             flag: true
@@ -27,7 +27,7 @@ class Card extends React.Component {
 
                 <div className="content">
                     <a href={this.props.link}>
-                        <div className="icon"></div>
+                        <div className="icon">{this.state.icon}</div>
                         <h2 className="title">{this.props.title || this.state.title}</h2>
                     </a>
 
