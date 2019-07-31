@@ -16,7 +16,7 @@ class Card extends React.Component {
 
     render() {
         return(
-            <div className={this.state.flag ? "Card" : "Card card_expand"}>
+            <div className={this.state.flag ? "Card" : "Card Card_expand"}>
 
                 <div className="Content">
                     <a class="Link" href="#">
@@ -26,7 +26,7 @@ class Card extends React.Component {
                         <h2 className="Title">{this.props.title}</h2>
                     </a>
 
-                    <p className="Descritpion">
+                    <p className="Description">
                         {this.props.description}
                     </p>
 

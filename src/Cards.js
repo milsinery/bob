@@ -15,7 +15,7 @@ class Cards extends React.Component {
                         id={content.id} 
                         title={content.title} 
                         description={content.description}
-                        links={content.link.map(links => <a href={links}></a>)}
+                        links={content.link.map(links => <a className="Nav__Item" href={links}>{links}</a>)}
                     />
                 )}
             </div>

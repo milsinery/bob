@@ -9,9 +9,9 @@ const cardsData = [
             "Help1"
         ],
         link: [
-            "1", 
-            "2", 
-            "3"
+            "Link11", 
+            "Link12", 
+            "Link13"
         ]
     },
     {
@@ -24,9 +24,9 @@ const cardsData = [
             "Help2"
         ],
         link: [
-            "1", 
-            "2", 
-            "3"
+            "Link21", 
+            "Link22", 
+            "Link23"
         ]
     },
     {
@@ -39,9 +39,9 @@ const cardsData = [
             "Help3"
         ],
         link: [
-            "1", 
-            "2", 
-            "3"
+            "Link31", 
+            "Link32", 
+            "Link33"
         ]
     },
     {
@@ -54,9 +54,9 @@ const cardsData = [
             "Help4"
         ],
         link: [
-            "1", 
-            "2", 
-            "3"
+            "Link41", 
+            "Link42", 
+            "Link43"
         ]
     },
 ]
