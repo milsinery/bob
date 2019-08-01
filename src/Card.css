@@ -76,16 +76,28 @@
         transition: all .3s ease-in-out; 
     }
 
+    
     .Description {
         visibility: hidden;
     }
-
+    
     .Nav {
         visibility: hidden;
     }
 
+    .Nav__Item {
+        margin-bottom: 8px;
+    }
+    
+    .Card_expand .Nav {
+        visibility: visible;
+        flex-direction: column;
+    }
+    
+
     .Card__expander {
         visibility: visible;
     }
+    
 
 }
