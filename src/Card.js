@@ -15,6 +15,11 @@ class Card extends React.Component {
     }
 
     render() {
+
+        function createNav() {
+            return null
+        }
+
         return(
             <div className={this.state.flag ? "Card" : "Card Card_expand"}>
 
@@ -31,7 +36,7 @@ class Card extends React.Component {
                     </p>
 
                     <div className="Nav">
-                        {this.props.links}
+                        {createNav()}
                     </div>
                 </div>
                 
